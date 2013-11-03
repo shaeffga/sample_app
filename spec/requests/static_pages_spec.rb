@@ -5,13 +5,13 @@ describe "Static Pages" do
   describe "Home Page" do
 
     it "Should have the right title" do
-    visit '/static_pages/home'
+    visit '/'
 
     expect(page).to have_title'| Home'
     end
 
     it "should have the content 'Sample App'" do
-      visit '/static_pages/home'
+      visit '/'
       expect(page).to have_content'Sample App'
     end
   end
@@ -19,13 +19,13 @@ describe "Static Pages" do
   describe "Help Page" do
 
     it "Should have the right title" do
-    visit '/static_pages/help'
+    visit '/help'
 
     expect(page).to have_title('| Help')
     end 
 
     it "should have the content 'Help" do
-      visit '/static_pages/help'
+      visit '/help'
 
       expect(page).to have_content'Help'
     end
@@ -34,13 +34,13 @@ describe "Static Pages" do
   describe "About Us Page" do 
 
     it "Should have the right title" do
-    visit '/static_pages/about'
+    visit '/about'
 
     expect(page).to have_title'| About'
     end
 
     it "Should have the content 'About Us'" do
-      visit '/static_pages/about'
+      visit '/about'
 
       expect(page).to have_content'About Us'
     end
@@ -49,13 +49,13 @@ describe "Static Pages" do
   describe "Contact Page" do
 
     it "Should have the right title" do
-      visit '/static_pages/contact'
+      visit '/contact'
 
       expect(page).to have_title'| Contact'
     end
 
     it "Should have the content 'Contact'" do
-      visit '/static_pages/contact' 
+      visit '/contact' 
 
       expect(page).to have_content'Contact'
     end
