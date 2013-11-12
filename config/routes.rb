@@ -6,5 +6,7 @@ SampleApp::Application.routes.draw do
   match '', to: 'static_pages#home', via: 'get'
   match '/blog', to: 'static_pages#blog', via: 'get'
 
+  resources :users
+
   root to: 'static_pages#home'
 end
