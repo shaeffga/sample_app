@@ -17,7 +17,7 @@ module SampleApp
   class Application < Rails::Application
 
     config.generators do |g|
-        g.factory_girl dir: 'spec/factories.rb'
+        g.factory_girl dir: 'spec/factories/user.rb'
     end
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
